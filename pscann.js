@@ -14,4 +14,5 @@ const input = readline.createInterface({
             portscanner.checkPortStatus(port, `${ip}`).then(status =>{ console.log(`\nPORTA ${port}: ${status}`)}).catch(err =>console.log("ERROR"))
         }
     }
-})
+)
+ 
