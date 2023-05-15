@@ -1,17 +1,15 @@
 const portscanner = require("portscanner")
 const readline = require("readline")
-const execSync = require("child_process").execSync
 
 const input = readline.createInterface({
     input: process.stdin, output: process.stdout})
-    console.log("==========================================\n        port scann\n        by: Swag666baby\n==========================================\n\n")
-    input.question("digite o ip: ",
-    function(answer){
-        const ip = answer
+    console.log("    ==========================================\n    port scann\n    by: Swag666baby\n    ==========================================\n\n");
+    input.question("digite o ip: ", async(ip) => {
         input.close()
-        const ports = [20,21,22,23,25,42,45,60,80,88,110,120,130,150,443,500,550,600,700,800,2000,3000,4000,5000,6000,7000,8000,8080,9000]
+        const ports = [20, 21, 22, 23, 25, 53, 67, 68, 69, 80, 88, 110, 123, 135, 137, 138, 139, 143, 161, 162, 179, 194, 389, 443, 445, 464, 500, 514, 636, 873, 989, 990, 993, 995, 1025, 1080, 1194, 1433, 1434, 1521, 1723, 2049, 2082, 2083, 3306, 3389, 5432, 5900, 8080, 8443]
         for (const port of ports) {
-            portscanner.checkPortStatus(port, `${ip}`).then(status =>{ console.log(`\nPORTA ${port}: ${status}`)}).catch(err =>console.log("ERROR"))
+            const status = await portscanner.checkPortStatus(port, ip)
+            console.log(`port: ${port}, status: ${status}`)
         }
     }
 )
