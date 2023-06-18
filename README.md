@@ -9,6 +9,6 @@ git clone https://github.com/Swag666baby/pscann
 # running 
 ```
 cd pscann
-yarn add portscanner readline 
+npm install
 tsc index.ts
 ```
