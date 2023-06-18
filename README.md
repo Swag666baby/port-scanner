@@ -1,9 +1,8 @@
 # pscann
-a port scanner made in javascript 
+a port scanner made in typescript 
 
 # installation 
 ```
-apt-get install git
 git clone https://github.com/Swag666baby/pscann
 ```
 
@@ -11,5 +10,5 @@ git clone https://github.com/Swag666baby/pscann
 ```
 cd pscann
 yarn add portscanner readline 
-node index.js
+tsc index.ts
 ```
