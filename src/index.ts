@@ -8,5 +8,5 @@ const input = createInterface({
 input.question("enter the ip: ", async(ip) => {
     input.close();
     startCode(ip);
-    console.log("\nthanks! :)");
+    console.log("\nthanks! :)\n");
 });
