@@ -1,8 +1,0 @@
-{
-  "dependencies": {
-    "portscanner": "^2.2.0"
-  },
-  "devDependencies": {
-    "@types/node": "^20.3.1"
-  }
-}
