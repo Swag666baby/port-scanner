@@ -8,7 +8,7 @@ git clone https://github.com/Swag666baby/pscann
 
 # running 
 ```
-cd pscann
-npm install
-tsc index.ts
+cd port-scann
+npm install @types/node
+tsc src/index
 ```
