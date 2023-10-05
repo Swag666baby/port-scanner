@@ -11,4 +11,5 @@ git clone https://github.com/Swag666baby/pscann
 cd port-scann
 npm install @types/node
 tsc src/index
+node src/index
 ```
