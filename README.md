@@ -1,4 +1,4 @@
-# pscann
+# port-scanner
 a port scanner made in typescript 
 
 # installation 
